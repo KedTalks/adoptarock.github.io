@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt a Rock</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-white text-lg font-bold">Adopt a Rock</a>
+      <div>
+        <a href="index.html" class="text-gray-200 hover:text-white px-4">Home</a>
+        <a href="rocks.html" class="text-gray-200 hover:text-white px-4">Available Rocks</a>
+        <a href="contact.html" class="text-gray-200 hover:text-white px-4">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Adoption Form -->
+  <section class="py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Adopt Your Rock</h2>
+      <form class="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg" action="#" method="POST">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Your Name</label>
+          <input class="w-full px-3 py-2 border rounded" id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+          <input class="w-full px-3 py-2 border rounded" id="email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="rock">Choose a Rock</label>
+          <select class="w-full px-3 py-2 border rounded" id="rock">
+            <option>Rocky</option>
+            <option>Pebbles</option>
+            <option>Boulder</option>
+          </select>
+        </div>
+        <button class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" type="submit">Adopt Now</button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Adopt a Rock. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
